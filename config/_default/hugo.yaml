@@ -4,8 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
-baseURL: 'https://example.com/' # Website URL
+title: 'Autonomous Edge LAB'
+baseURL: 'https://st10527.github.io/' # Website URL
 
 ############################
 ## PAGE OPTIONS

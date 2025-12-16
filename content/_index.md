@@ -4,94 +4,77 @@ date: 2023-10-24
 type: landing
 
 design:
-  # Default section spacing
-  spacing: "6rem"
+  # 1. 將全域間距從 6rem 加大到 8rem，增加呼吸感
+  spacing: "8rem"
 
 sections:
+  # ---------------------------------------------------------
+  # 第一區塊：Hero (主視覺)
+  # ---------------------------------------------------------
   - block: hero
     content:
-      title: Write Docs Fast, Focus on Your Content
-      text: The easy, no-code technical documentation solution your users will love 🎉
+      title: Welcome to AE-LAB (Autonomous Edge LAB)
+      # 2. 我在文字中間加了 HTML 的 <br> 標籤，強迫換行，避免文字擠成一坨
+      text: |
+        I am **Shengzhi Huang**, an Assistant Professor in the Department of Computer Science & Information Engineering at Tamkang University.<br><br>
+        My research interests include **Edge AI**, **Multi-UAV Systems**, and **Financial Technology (FinTech)**.
       primary_action:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
-        icon: rocket-launch
+        text: View Publications
+        url: /publication/
+        icon: book-open
       secondary_action:
-        text: Read the docs
-        url: /docs/
-      announcement:
-        text: "Announcing the release of version 2."
-        link:
-          text: "Read more"
-          url: "/blog/"
+        text: Contact Me
+        url: /#contact
     design:
+      # 3. 增加 Hero 區塊上下的內部留白 (原本是 0)
       spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: ""
+        padding: ["2rem", 0, "4rem", 0]
       background:
-        color: ""
         image:
-          # Add your image background to `assets/media/`.
-          filename: ""
+          filename: "" 
           filters:
             brightness: 0.5
-  - block: stats
-    content:
-      items:
-        - statistic: "1M+"
-          description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
-          description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
-          description: |
-            Discord community  
-            for support
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-800"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+
+  # ---------------------------------------------------------
+  # 第二區塊：Research Focus (這裡最容易覺得擠)
+  # ---------------------------------------------------------
   - block: features
-    id: features
+    id: research
     content:
-      title: Features
-      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by 100,000+ startups, enterprises, and researchers.
+      title: Research Focus
+      text: My lab focuses on intelligent computing, autonomous systems, and quantitative financial analysis.
       items:
-        - name: Optimized SEO
-          icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
-          icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
-          icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
-          icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
-          icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
-          icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
-  - block: cta-card
-    content:
-      title: "Start Writing with the #1 Effortless Documentation Platform"
-      text: Hugo Blox Docs Theme brings all your technical knowledge together in a single, centralized knowledge base. Easily search and edit it with the tools you use every day!
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
+        - name: Edge AI & Optimization
+          icon: cpu-chip
+          description: Model quantization, compression, and deployment on embedded devices (NVIDIA Jetson / Raspberry Pi).
+        - name: Multi-UAV Systems
+          icon: paper-airplane
+          description: Research on ad-hoc networks, dynamic role assignment, and energy-efficient path planning.
+        - name: FinTech
+          icon: chart-bar
+          description: AI in stock market prediction, futures investment strategies, and global commodity tracking.
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
+      css_class: "bg-gray-100 dark:bg-gray-800"
+      columns: "3"
+      # 4. 這裡將 padding 加大，讓這一塊跟上下拉開距離
+      spacing:
+        padding: ["5rem", 0, "5rem", 0]
+
+# ---------------------------------------------------------
+  # 第三區塊：最新動態 (Recent News)
+  # ---------------------------------------------------------
+  - block: collection
+    content:
+      title: Recent News
+      text: ""
+      filters:
+        folders:
+          - post
+        exclude_featured: false
+      count: 3
+    design:
+      # 這裡原本是 view: compact，請改成 view: card
+      view: card
+      # 這裡改成 3，變成橫向三欄，視覺上比較大氣
+      columns: 3
 ---
