@@ -2,31 +2,46 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: 吳健雄
-  given: Shiung Wu
-  family: Chien
-  pronunciation: Chien Shiung Wu
-  pronouns: she/her
+  display: Sheng-Zhi Huang
+  given: Sheng-Zhi
+  family: Huang
+  pronunciation: Sheng-Zhi Huang
 status:
-  icon: "☕️"
-role: Professor of Artificial Intelligence
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+  icon: ""
+role: Assistant Professor
+bio: |
+  I am an Assistant Professor at Tamkang University. My research focuses on UAV Networks, Multi-Access Edge Computing, and emerging wireless technologies. I received my Ph.D. from National Central University in 2023, and was a Visiting Scholar at Iowa State University (2022-2023) under NSTC's Graduate Students Study Abroad Program.
 affiliations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Tamkang University
+    department: Dept. of Computer Science & Information Engineering
+    url: https://www.csie.tku.edu.tw/
+interests:
+  - UAV Networks & Flying Ad-hoc Networks
+  - Multi-Access Edge Computing (MEC)
+  - Space-Air-Ground Integrated Networks (SAGIN)
+  - Financial Technology (FinTech)
+education:
+  - area: Ph.D. in Communication Engineering
+    institution: National Central University, Taiwan
+    date_end: '2023-06-01'
+  - area: Visiting Scholar (NSTC Program)
+    institution: Iowa State University, USA
+    date_end: '2023-03-01'
+  - area: B.S. in Communication Engineering
+    institution: National Central University, Taiwan
+    date_end: '2016-06-01'
+work:
+  - position: Assistant Professor
+    company_name: Tamkang University
+    date_start: '2023-08-01'
+  - position: Visiting Scholar
+    company_name: Iowa State University
+    date_start: '2022-03-01'
+    date_end: '2023-03-01'
 links:
   - icon: at-symbol
-    url: mailto:your-email@example.com
+    url: mailto:167320@o365.tku.edu.tw
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/BuildLore
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/cv
-    url: uploads/resume.pdf
-    label: Download my resume
-  - icon: rss
-    url: ./post/index.xml
-    label: Subscribe to my blog via RSS feed
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-3735-0613
+    label: ORCID

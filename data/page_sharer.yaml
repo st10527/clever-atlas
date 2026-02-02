@@ -1,0 +1,21 @@
+links:
+  - enable: true
+    icon: brands/x
+    icon_pack: fab
+    name: Share on X
+    url: https://x.com/intent/tweet?url={url}&text={title}
+  - enable: true
+    icon: brands/facebook
+    icon_pack: fab
+    name: Share on Facebook
+    url: https://www.facebook.com/sharer/sharer.php?u={url}
+  - enable: true
+    icon: brands/linkedin
+    icon_pack: fab
+    name: Share on LinkedIn
+    url: https://www.linkedin.com/sharing/share-offsite/?url={url}
+  - enable: true
+    icon: envelope
+    icon_pack: fas
+    name: Email
+    url: mailto:?subject={title}&body={url}

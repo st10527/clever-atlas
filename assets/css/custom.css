@@ -1,0 +1,119 @@
+/* Custom styles for AE-LAB website */
+/* 讓頁面內容更寬，減少兩邊空白 */
+
+/* 全域容器寬度調整 */
+.container,
+.max-w-screen-xl,
+.max-w-7xl {
+  max-width: 1400px !important;
+}
+
+/* Landing page sections 寬度 */
+.hb-section,
+[class*="hb-"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* 內容區塊寬度 */
+.hb-section > div,
+.hb-section > .container {
+  max-width: 1400px !important;
+  width: 95% !important;
+  margin: 0 auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Biography 區塊 */
+.hb-resume-biography > div {
+  max-width: 1400px !important;
+  width: 95% !important;
+}
+
+/* Features grid (Research Areas) */
+.hb-features .grid {
+  max-width: 1400px !important;
+  gap: 2rem !important;
+}
+
+/* Markdown 內容寬度 */
+.prose {
+  max-width: 100% !important;
+}
+
+.hb-markdown .prose {
+  max-width: 1200px !important;
+}
+
+/* Collection 區塊 (Publications) */
+.hb-collection > div {
+  max-width: 1400px !important;
+  width: 95% !important;
+}
+
+/* Publication list 頁面 */
+main > .container,
+main > div > .container {
+  max-width: 1400px !important;
+  width: 95% !important;
+}
+
+/* 論文圖片寬度調整為 65% */
+.hb-collection article img,
+.hb-collection .article-card img,
+article.card img,
+.publication-card img {
+  max-width: 65% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* Publication 詳細頁面的 featured 圖片 */
+article > header img,
+.article-header img,
+.featured-image img {
+  max-width: 65% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* 表格響應式處理 */
+.prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 768px) {
+  .prose table {
+    display: table;
+  }
+}
+
+/* 大螢幕調整 */
+@media (min-width: 1536px) {
+  .hb-section > div,
+  .hb-section > .container,
+  .container {
+    max-width: 1600px !important;
+    width: 90% !important;
+  }
+}
+
+/* 小螢幕調整 */
+@media (max-width: 768px) {
+  .hb-section > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+  }
+  
+  /* 小螢幕論文圖片可以寬一點 */
+  .hb-collection article img,
+  article.card img {
+    max-width: 85% !important;
+  }
+}
